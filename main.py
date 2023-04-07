@@ -64,12 +64,22 @@ class LinkedList:
             self.head = None
             self.tail = None
         return temp.value
+    
+    def get(self, index):
+        if index not in range(0, self.length):
+            return None
+        temp = self.head
+        for _ in range(index):
+            temp = temp.next
+        print temp.value            
 
 
 
 my_linked_list = LinkedList(1)
 my_linked_list.appand(2)
+my_linked_list.appand(3)
+my_linked_list.get(2)
 # print(my_linked_list.pop())
-print(my_linked_list.pop_first())
-# my_linked_list.print_list()
+# print(my_linked_list.pop_first())
+my_linked_list.print_list()
 
