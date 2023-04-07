@@ -69,7 +69,6 @@ class LinkedList:
 
 my_linked_list = LinkedList(1)
 my_linked_list.appand(2)
-# my_linked_list.prepand(0)
 # print(my_linked_list.pop())
 print(my_linked_list.pop_first())
 # my_linked_list.print_list()
